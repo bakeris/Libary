@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content" class="container">
+        <div id ='header'><h1>Library</h1></div>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Book Libary</h1>
+          
+              <label for="name"><b>Book Name</b></label>
+              <input type="text" id='bookName' placeholder="Enter Book Name" value = '' name="name" required>
+          
+              <label for="name"><b>Author</b></label>
+              <input type="text" id='bookAuthor' placeholder="Enter Book Author" name="author" required>
+
+              <label for="pages"><b>How Many Pages</b></label>
+              <input type="text" id='bookPages' placeholder="Enter how many pages book have" name="pages" required>
+          
+              <button type="button" class="btn" onclick = 'newBook()'>Submit</button>
+              <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div> 
+        <div id ='mainContainer' class="grid"></div>
+        <div id ='footer'></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
